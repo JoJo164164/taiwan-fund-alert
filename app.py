@@ -142,7 +142,7 @@ def get_nav_history_15y(code, is_domestic):
         pass
 
     for year in range(current_year - 1, current_year - 16, -1):
-        for month in [1, 4, 7, 10]:
+        for month in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]:
             date_str = str(year) + str(month).zfill(2) + "01"
             hist_url = ("https://www.moneydj.com/funddj/ya/" + page +
                         ".djhtm?a=" + code + "&d=" + date_str)
